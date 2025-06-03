@@ -1,0 +1,20 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.parallax {
+  background-image: url(assetes/background.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  height: 400px;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
