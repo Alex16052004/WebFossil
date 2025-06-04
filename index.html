@@ -27,7 +27,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
   <body style="background-color: brown">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <audio autoplay>
+        <audio id="voice">
           <source src="assetes/t-rex-growl-324746.mp3" />
         </audio>
         <img
@@ -35,6 +35,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
           src="assetes/logojpg.jpg"
           alt="..."
           style="height: 60px"
+          onclick="roar()"
         />
         <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Fossil"
           >WebFossil</a
@@ -396,5 +397,11 @@ Join us in uncovering the secrets buried beneath the surface — because every f
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function roar() {
+        aud = document.getElementById("voice");
+        aud.play();
+      }
+    </script>
   </body>
 </html>
