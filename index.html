@@ -31,6 +31,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
           <source src="assetes/t-rex-growl-324746.mp3" />
         </audio>
         <img
+          loading="lazy"
           class="logo"
           src="assetes/logojpg.jpg"
           alt="..."
@@ -90,13 +91,28 @@ Join us in uncovering the secrets buried beneath the surface — because every f
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assetes/f1jpg.jpg" class="d-block w-100" alt="..." />
+          <img
+            loading="lazy"
+            src="assetes/f1jpg.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-          <img src="assetes/f2jpg.jpg" class="d-block w-100" alt="..." />
+          <img
+            loading="lazy"
+            src="assetes/f2jpg.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-          <img src="assetes/f3.jpg" class="d-block w-100" alt="..." />
+          <img
+            loading="lazy"
+            src="assetes/f3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
       </div>
       <button
@@ -137,6 +153,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
             </p>
             <p>
               <img
+                loading="lazy"
                 class="img-thumbnail"
                 src="assetes/trex.jpg"
                 alt="Tyrannosaurus Rex"
@@ -166,6 +183,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
             </p>
             <p>
               <img
+                loading="lazy"
                 class="img-thumbnail"
                 src="assetes/triceratops.jpg"
                 alt="Triceratops"
@@ -195,6 +213,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
             </p>
             <p>
               <img
+                loading="lazy"
                 class="img-thumbnail"
                 src="assetes/valociraptor.jpg"
                 alt="Valociraptor"
@@ -224,6 +243,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
             </p>
             <p>
               <img
+                loading="lazy"
                 class="img-thumbnail"
                 src="assetes/brachiosaurus.jpg"
                 alt="Brachiosaurus"
@@ -244,7 +264,12 @@ Join us in uncovering the secrets buried beneath the surface — because every f
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card text-bg-dark">
-              <img src="assetes/textimage1.jpg" class="card-img" alt="..." />
+              <img
+                loading="lazy"
+                src="assetes/textimage1.jpg"
+                class="card-img"
+                alt="..."
+              />
               <div class="card-img-overlay">
                 <h5 class="card-title">History Of Dinosaurs</h5>
                 <p class="card-text">
@@ -282,17 +307,32 @@ Join us in uncovering the secrets buried beneath the surface — because every f
           </div>
           <div class="col">
             <div class="card">
-              <img src="assetes/dino.jpg" class="card-img-top" alt="..." />
+              <img
+                loading="lazy"
+                src="assetes/dino.jpg"
+                class="card-img-top"
+                alt="..."
+              />
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="assetes/dino1.jpg" class="card-img-top" alt="..." />
+              <img
+                loading="lazy"
+                src="assetes/dino1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
             </div>
           </div>
           <div class="col">
             <div class="card text-bg-dark">
-              <img src="assetes/textimage2.jpg" class="card-img" alt="..." />
+              <img
+                loading="lazy"
+                src="assetes/textimage2.jpg"
+                class="card-img"
+                alt="..."
+              />
               <div class="card-img-overlay">
                 <h5 class="card-title">Classification Of Dino</h5>
                 <p class="card-text">
@@ -329,9 +369,10 @@ Join us in uncovering the secrets buried beneath the surface — because every f
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <br />
+    <div class="container">
       <iframe
-        width="80%"
+        width="100%"
         height="400px"
         src="https://www.youtube.com/embed/hgO0qBsCaZc?si=O8cUaS3fGqQ887JQ"
         title="YouTube video player"
@@ -341,6 +382,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
         allowfullscreen
       ></iframe>
     </div>
+    <br />
     <footer class="container-fluid" style="border-top: 1px solid black">
       <div class="row" style="margin: 0px; margin-top: 0px; margin-left: 0px">
         <div class="col-md-6">
@@ -350,25 +392,46 @@ Join us in uncovering the secrets buried beneath the surface — because every f
           <p>Copyright &copy; 2025 WebFossil</p>
         </div>
         <div class="col-md-6">
-          <form action="" class="d-flex flex-column" style="margin-left: 500px">
+          <form
+            action="https://formspree.io/f/mzzgzwob"
+            method="POST"
+            class="d-flex flex-column"
+            style="margin-left: 500px"
+          >
+            <label for="Full Name">Full Name:</label>
+            <input
+              type="text"
+              name="Name"
+              placeholder="Enter your full name"
+              required
+            />
+
             <label for="email">Email:</label>
-            <input type="text" name="email" />
+            <input
+              type="text"
+              name="Email"
+              placeholder="Enter your email"
+              required
+            />
 
-            <label for="password">Password:</label>
-            <input type="password" name="password" />
-
-            <a
-              href="#"
-              class="btn btn-primary btn-lg"
-              role="button"
-              style="margin: 10px"
-              >submit</a
+            <button
+              style="
+                margin-top: 10px;
+                width: 100px;
+                padding: 5px;
+                cursor: pointer;
+                background: rgb(100, 100, 241);
+                color: white;
+              "
             >
+              login
+            </button>
           </form>
         </div>
         <div class="icon d-flex flex-row">
           <a href="https://www.facebook.com/">
             <img
+              loading="lazy"
               src="assetes/4494464.png"
               alt=""
               height="70"
@@ -378,6 +441,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
           </a>
           <a href="https://x.com/">
             <img
+              loading="lazy"
               src="assetes/4494465.png"
               alt=""
               height="70"
@@ -387,6 +451,7 @@ Join us in uncovering the secrets buried beneath the surface — because every f
           </a>
           <a href="https://www.instagram.com/accounts/login/?hl=en">
             <img
+              loading="lazy"
               src="assetes/4494468.png"
               alt=""
               height="70"
