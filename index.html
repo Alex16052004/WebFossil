@@ -84,57 +84,53 @@ Join us in uncovering the secrets buried beneath the surface — because every f
         </div>
       </div>
     </nav>
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            loading="lazy"
-            src="assetes/f1jpg.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            loading="lazy"
-            src="assetes/f2jpg.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            loading="lazy"
-            src="assetes/f3.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
+ <!-- Carousel HTML -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active position-relative">
+      <img loading="lazy" src="assetes/f1jpg.jpg" class="d-block w-100" alt="...">
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+      <div class="carousel-caption fade-up">
+        <h1>Welcome to Web Fossil</h1>
+        <p>Your one-stop destination to learn about fossils and dinosaurs.</p>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <br />
+
+    <div class="carousel-item position-relative">
+      <img loading="lazy" src="assetes/f2jpg.jpg" class="d-block w-100" alt="...">
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+      <div class="dark-overlay"></div>
+      <div class="carousel-caption fade-up">
+        <h1>Explore Ancient Mysteries</h1>
+        <p>Uncover secrets buried beneath the Earth for millions of years.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item position-relative">
+      <img loading="lazy" src="assetes/f3.jpg" class="d-block w-100" alt="...">
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+      <div class="dark-overlay"></div>
+      <div class="carousel-caption fade-up">
+        <h1>Discover the Dinosaur Era</h1>
+        <p>Step into the past and walk with the giants of history.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <br />
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
