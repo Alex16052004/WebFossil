@@ -4,6 +4,7 @@ html {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 .parallax {
   background-image: url(assetes/background.jpg);
   min-height: 500px;
@@ -12,9 +13,46 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .content {
   height: 400px;
   background-color: white;
   padding: 40px;
   text-align: center;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
